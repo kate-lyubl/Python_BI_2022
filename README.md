@@ -28,8 +28,7 @@ mv 'ultraviolence.py?raw=true' ultraviolence.py
 
 ```
 pipenv install pandas==1.4.4
-pipenv install numpy
-pipenv install requests
+pipenv install bs4
 pipenv install google-cloud
 pipenv install google-cloud-vision
 pipenv install Bio
