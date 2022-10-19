@@ -1,0 +1,9 @@
+Required libraries:
+- pandas 1.4.4 (don't use later versions)
+- bs4
+- google-cloud
+- google-cloud-vision
+- Bio
+- aiohttp
+- opencv-python
+- lxml
