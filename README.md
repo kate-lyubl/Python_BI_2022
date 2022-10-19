@@ -24,7 +24,7 @@ wget https://github.com/krglkvrmn/Virtual_environment_research/blob/master/ultra
 mv 'ultraviolence.py?raw=true' ultraviolence.py
 ```
 
-3. install required packages:
+3. install required libraries:
 
 ```
 pipenv install pandas==1.4.4
