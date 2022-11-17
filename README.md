@@ -1,6 +1,6 @@
 # Python_BI_2022
 
-This homework contains 6 task related to regex topic.
+This homework contains 6 tasks related to regex topic.
 
 1. Parse the references file using regular expressions and write all the ftp links from there to the ftps file
 
