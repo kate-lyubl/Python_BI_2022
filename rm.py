@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 import argparse
 import os
@@ -8,7 +8,7 @@ import shutil
 def read_args():
     parser = argparse.ArgumentParser()
     parser.add_argument('filename')
-    parser.add_argument('-r')
+    parser.add_argument('-r', action='store_true')
     args = parser.parse_args()
     return args
 
