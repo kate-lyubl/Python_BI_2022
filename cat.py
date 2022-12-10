@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 import argparse
 import sys
@@ -6,7 +6,7 @@ import sys
 
 def read_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument('filename')
+    parser.add_argument('filename', nargs='?')
     args = parser.parse_args()
     return args
 
@@ -19,5 +19,4 @@ if __name__ == "__main__":
         f.close()
     else:
         content = sys.stdin.read()
-    print(content)
-
+    print(content, end='')
