@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 import os
 import argparse
@@ -6,8 +6,8 @@ import argparse
 
 def read_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument('filename')
-    parser.add_argument('-a')
+    parser.add_argument('filename', nargs='?')
+    parser.add_argument('-a', action='store_true')
     args = parser.parse_args()
     return args
 
@@ -27,7 +27,6 @@ if __name__ == "__main__":
     else:
         path = os.getcwd()
     if not args.a:
-        print(*get_files(path))
+        print(*get_files(path), sep='\n')
     else:
-        print(*get_all_files(path))
-
+        print(*get_all_files(path), sep='\n')
