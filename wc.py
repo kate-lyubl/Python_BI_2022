@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 import argparse
 import sys
@@ -6,16 +6,16 @@ import sys
 
 def read_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument('filename')
-    parser.add_argument('-w')
-    parser.add_argument('-l')
-    parser.add_argument('-c')
+    parser.add_argument('filename', nargs='?')
+    parser.add_argument('-w', action='store_true')
+    parser.add_argument('-l', action='store_true')
+    parser.add_argument('-c', action='store_true')
     args = parser.parse_args()
     return args
 
 
 def count_lines(content):
-    return len(content.split("\n"))
+    return content.count('\n')
 
 
 def count_words(content):
@@ -44,4 +44,3 @@ if __name__ == "__main__":
             if opt:
                 ans.append(func(content))
     print(*ans)
-
