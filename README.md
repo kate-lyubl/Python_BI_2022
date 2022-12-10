@@ -12,9 +12,85 @@ In this work, programs were implemented that simulate the UNIX utilities.
 `$ git clone https://github.com/kate-lyubl/Python_BI_2022.git --branch homework_8`
 
 # How to use programs
+Before using programs you have to run `$ chmod +x *.py` command.
 1. `./wc.py [-l] [-c] [-w] <filename>`
 2. `./ls [-a] <path>`
 3. `./sort <filename>`
 4. `./rm [-r] <path>`
 5. `./cat <filename>`
+
+# Examples
+`$ ./wc.py example.txt`
+\
+2 7 38
+
+
+`$ ./wc.py example.txt -l`
+\
+4
+
+
+`$ ./wc.py example.txt -w`
+\
+7
+
+
+`$ ./wc.py example.txt -c`
+\
+39
+
+
+`$ ./ls`
+\
+ls.py
+\
+README.md
+\
+wc.py
+\
+example.txt
+\
+sort.py
+\
+cat.py
+\
+rm.py
+
+
+`$ ./sort.py example.txt`
+\
+Hello, World!
+\
+This 
+\
+an example file
+\
+is
+
+
+`$ ./cat.py example.txt`
+\
+Hello, World!
+\
+This 
+\
+is
+\
+an example file
+
+
+`$ ./rm.py example.txt`
+`$ ./ls.py`
+\
+ls.py
+\
+README.md
+\
+wc.py
+\
+sort.py
+\
+cat.py
+\
+rm.py
 
