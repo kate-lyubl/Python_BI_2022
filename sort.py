@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 import argparse
 import sys
@@ -6,13 +6,13 @@ import sys
 
 def read_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument('filename')
+    parser.add_argument('filename', nargs='?')
     args = parser.parse_args()
     return args
 
 
 def sort_lines(content):
-    content = content.split("\n")
+    content = content.strip().split("\n")
     content.sort()
     return content
 
@@ -26,4 +26,3 @@ if __name__ == "__main__":
     else:
         content = sys.stdin.read()
     print(*sort_lines(content), sep="\n")
-
